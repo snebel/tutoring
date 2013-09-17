@@ -9,10 +9,8 @@
     <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
 
     <!-- Stylesheets -->
-    <!--<link rel="stylesheet" type="text/css" href="http://plover.co/static/css/lib/common.css"> -->
     <%= stylesheet_link_tag "about" %>
     <style type="text/css">
-
 
         header {
             background: #fff;
@@ -56,6 +54,7 @@
             font-size: 28px;
             font-weight: 400;
             margin-bottom: 15px;
+            text-align: left;
         }
 
         p {
@@ -86,10 +85,7 @@
             padding-bottom: 10;
         }
 
-        .post img {
-            border-radius: 10px;
-            max-width: 500px;
-        }
+
 
         .post .author {
             border: 4px solid #fff;
@@ -101,8 +97,11 @@
             position: absolute;
         }
 
-        img {
+        .rome_img {
             display: block;
+            border-radius: 0px;
+            width: 65px;
+            
         }
 
         /* Footer */
@@ -145,19 +144,16 @@
 <body class="public blog">
     <!-- BEGIN Header --> 
     <header id="header">
-      <div class="wrap">
-        <div id="left-navigation">
-          <p><!--<img src="https://cdn1.iconfinder.com/data/icons/de-munich-icon-pack/16x16/contact.png">-->
-          <a href="tel: +16466233224">(646) 623-3224</a></p>
-        </div>
-        <div id="right-navigation">
-          <p><!--<img src="https://cdn1.iconfinder.com/data/icons/munich/16x16/email.png">-->
-          <a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a></p>
-        </div>
-      </div>
+    	<div class="wrap">
+        	<div id="left-navigation">
+          		<p> <a href="tel: +16466233224">(646) 623-3224</a> </p>
+        	</div>
+        	<div id="right-navigation">
+        		<p><a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com
+        		</a></p>
+        	</div>
+      	</div>
     </header>
-            </div>
-        </div>
 
         <div class="wrap">
             <div class="posts">                
@@ -166,7 +162,8 @@
                 
                 <div class="post">
                     <div class="author">
-                        <img src="file:///Users/Nebs/Desktop/HTML/IMG_1099_2.jpg" width="65">
+                     <!-- <img src="file:///Users/Nebs/Desktop/HTML/IMG_1099_2.jpg" width="65"> -->
+                     <%= image_tag "sambali.jpg", :class => "rome_img" %>
                     </div>
                     
                     <!-- Text Post -->

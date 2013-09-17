@@ -9,17 +9,16 @@ button {
   padding: 5px;
 }
 
+/*
 .button:hover,
 .button:visited {
   color: #fff;
 }
 
-/* Grey Button */
-.button.grey {
-  background-color: #c5c4c4;
-}
+
 
 /* Icon Buttons */
+/*
 .button.icon-button {
   background-color: transparent;
   padding: 0;
@@ -43,6 +42,7 @@ button {
   
   display: inline-block;
   /*opacity: 0;*/
+  /*
   overflow: hidden;
   text-overflow: ellipsis;
   transition: all 0.4s ease;
@@ -50,6 +50,7 @@ button {
   white-space: nowrap;
   /*max-width: 0;*/
 }
+ 
 
 /*.icon-button:hover .label {
   -webkit-transition: all 0.4s ease;
