@@ -358,7 +358,7 @@ h2 em {
 }
 
 #mc-embedded-subscribe .icon {
-    background: #FF770D url(/assets/icon-sprite.png') no-repeat left 60%;
+    background: #FF770D url('/assets/icon-sprite.png') no-repeat left 60%;
     display: block;
     height: 18px;
     font-size: 18px;
