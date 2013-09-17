@@ -1,12 +1,6 @@
-/* Standard Orange Button */
 .button,
 button {
-  background-color: #ff770d;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  display: inline-block;
-  padding: 5px;
+  border: none; 
 }
 
 a,
@@ -26,45 +20,6 @@ a:visited:hover {
     width: 990px;
 }
 
-/* Clearfix */
-/*
-.cf:before, .cf:after,
-.wrap:before, .wrap:after,
-.content:before, .content:after,
-header:before, header:after,
-footer:before, footer:after,
-.button:before, .button:after,
-.opposing-float-control:before, .opposing-float-control:after {
-    content: " ";
-    display: table;
-}
-.cf:after,
-.wrap:after,
-.content:after,
-header:after,
-footer:after,
-.button:after,
-.opposing-float-control:after {
-    clear: both;
-}
-
-.chzn-container {
-  width: 100% !important;
-}
-
-.chzn-container-active .chzn-single {
-  border: 1px solid #ff770d !important;
-}
-
-.chzn-drop {
-  border-color: #ff770d !important;
-}
-
-.chzn-container .chzn-drop .chzn-results .highlighted {
-  background-color: #ff770d;
-  background-image: none;
-}
-*/
 /* Footer */
 footer {
     border-top: 1px solid #ddd;
@@ -234,7 +189,7 @@ h2 em {
 #mc-embedded-subscribe .icon {
     background: #FF770D url('/assets/icon-sprite.png') no-repeat left 60%;
     display: block;
-    height: 18px;
+    height: 20px;
     font-size: 18px;
     line-height: 1;
     text-indent: -9999px;
