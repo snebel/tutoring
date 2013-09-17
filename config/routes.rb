@@ -1,9 +1,9 @@
 Tutoring::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/rates"
-  get "static_pages/faq"
-  get "static_pages/testimonials"
+  root "static_pages#home"
+  match '/rates',    to: 'static_pages#rates', via: 'get'
+  match '/about',   to: 'static_pages#about', via: 'get'
+  match '/faq', to: 'static_pages#faq', via: 'get'
+  match '/testimonials', to: 'static_pages#testimonials', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -58,5 +58,5 @@ Tutoring::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root to: "static_pages#home"
+  # root to: "static_pages#home"
 end
