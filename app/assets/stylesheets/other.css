@@ -52,21 +52,6 @@ footer a.orange {
 #right-navigation {
   float: right;
 }
-/*
-#right-navigation nav a {
-    color: #ff770d; #b0b8c2;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 60px;
-}
-*/
-/*
-#right-navigation nav a:hover {
-    color: #ff770d;
-}
-*/
-
-
 
 .legal h1 {
   color: #3E4956;
@@ -89,9 +74,11 @@ footer a.orange {
   line-height: 1.75;
 }
 
+/*
 .legal a[class="contact"] {
   color: #ff770d;
 }
+*/
 
 .legal p,
 .legal ol {
