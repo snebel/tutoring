@@ -1,3 +1,63 @@
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+
+	<% provide(:title, 'Sign up') %>
+
+    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
+
+    <%= stylesheet_link_tag "about" %>
+</head>
+
+
+<body>
+    <!-- BEGIN Header --> 
+    <header id="header">
+    	<div class="wrap">
+        	<div id="left-navigation">
+          		<p> <a href="tel: +16466233224">(646) 623-3224</a> </p>
+        	</div>
+
+        	<div id="right-navigation">
+        		<p><a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a></p>
+        	</div>
+      	</div>
+    </header>
+
+    <div class="wrap">
+        <div class="posts">                
+                
+            <div class="post">
+                <div class="author">
+                    
+                </div>
+                    
+                <div class="text">
+                    <h2>Sign Up</h2>
+                        
+                    <p></p>
+                </div>              
+            </div> <!-- end post -->
+        </div> <!-- end posts -->           
+    </div> <!-- end wrap -->
+
+    <footer>
+        <div class="wrap">
+            <nav>
+            <div class="column">
+                <%= link_to "Home", root_path %>
+                <%= link_to "Rates", rates_path %>
+                <%= link_to "Testimonials", testimonials_path %>
+                <%= link_to "FAQ", faq_path %>
+            </div>
+            </nav>
+            <div class="column last">
+                <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
