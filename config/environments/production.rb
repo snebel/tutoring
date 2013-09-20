@@ -23,9 +23,10 @@ Tutoring::Application.configure do
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
-    config.assets.enabled = true
+  config.assets.enabled = true
   config.assets.paths << "#{Rails.root}/app/assets/files"
 
+  config.force_ssl = true
 
   config.log_level = :info
 
