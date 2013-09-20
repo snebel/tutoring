@@ -134,19 +134,19 @@ footer:after,
 
         /* Footer */
         footer {
-            width: 900px;
             border-top: 1px solid #ddd;
-            margin-top: 50px;
-            padding: 50px; 
+            width: 100%;
+            overflow: hidden;
+            margin: 50px auto 0px auto;
+            float: left; 
         }
 
         footer .column {
-            float: left;
-            
+            text-align: right;
         }
 
         footer .column.last {
-            text-align: right;
+            float: right;
         }
 
         footer p {
