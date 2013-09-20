@@ -17,7 +17,7 @@ a:visited:hover {
 
 .wrap {
     margin: 0 auto;
-    width: 990px;
+    width: 960px;
 }
 
 /* Footer */
@@ -123,7 +123,7 @@ h2 em {
 .lead h2 {
     line-height: 2.0;
 }
-
+/*
 .lead header {
     margin: 0px 0 0px 0;
     position: relative;
@@ -134,6 +134,22 @@ h2 em {
     display: block;
     margin: 0 auto;
     width: 60px;
+}
+*/
+#header {
+  background: #fff;
+  /*border-bottom: 1px solid #ddd;*/
+  margin-bottom: 0px;
+  padding: 40px;
+}
+
+#left-navigation {
+  float: left;
+  min-width: 300px;
+}
+
+#right-navigation {
+  float: right;
 }
 
 .call-to-action {
@@ -188,6 +204,7 @@ h2 em {
 /* Points */
 .points {
     padding: 60px 0 0 0;
+
 }
 
 .point {
