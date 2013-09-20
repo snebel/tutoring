@@ -142,7 +142,7 @@ h2 em {
 
 
 .call-to-action img {
-    
+    border-radius: 600px;
     display: inline;
     margin: 0px 0px 20px 0px;
     border: 2px solid #b0b8c2;

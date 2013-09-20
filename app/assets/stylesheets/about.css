@@ -134,14 +134,15 @@ footer:after,
 
         /* Footer */
         footer {
+            width: 900px;
             border-top: 1px solid #ddd;
             margin-top: 50px;
-            padding: 50px;
+            padding: 50px; 
         }
 
         footer .column {
             float: left;
-            width: 50%;
+            
         }
 
         footer .column.last {
