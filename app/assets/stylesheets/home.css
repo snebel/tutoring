@@ -23,12 +23,12 @@ a:visited:hover {
 /* Footer */
 footer {
     border-top: 1px solid #ddd;
-    padding: 50px;
+    padding: 50px 0 50px 0px;
 }
 
 footer .column {
-    /*float: left;
-    width: 100%;*/
+    float: left;
+    width: 50%;
     text-align: left;
 }
 
@@ -60,6 +60,7 @@ footer a.orange {
 
 body {
   background-color: #f4f3f3;
+  overflow-x: hidden;
 }
 
 form,
@@ -186,7 +187,7 @@ h2 em {
 
 /* Points */
 .points {
-    padding: 60px 50px 0 50px;
+    padding: 60px 0 0 0;
 }
 
 .point {
