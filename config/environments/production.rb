@@ -26,8 +26,6 @@ Tutoring::Application.configure do
   config.assets.enabled = true
   config.assets.paths << "#{Rails.root}/app/assets/files"
 
-  config.force_ssl = true
-
   config.log_level = :info
 
   config.i18n.fallbacks = true
