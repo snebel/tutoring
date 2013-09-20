@@ -77,12 +77,6 @@ a {
     outline: none;
 }
 
-img {
-    border: none;
-    display: block;
-    outline: none;
-}
-
 svg {
     border: none;
     outline: none;
@@ -93,6 +87,7 @@ h1 {
     font-size: 46px;
     font-weight: 400;
     text-align: center;
+    padding: 50px 0 0 0;
 }
 
 h2 {
@@ -140,10 +135,6 @@ h2 em {
     width: 60px;
 }
 
-.lead header img {
-    display: block;
-}
-
 .call-to-action {
     padding: 10px 0 50px 0;
     text-align: center;
@@ -151,7 +142,7 @@ h2 em {
 
 
 .call-to-action img {
-    border-radius: 60px;
+    
     display: inline;
     margin: 0px 0px 20px 0px;
     border: 2px solid #b0b8c2;
@@ -168,6 +159,7 @@ h2 em {
     font-size: 18px;
     font-weight: 300;
     padding: 17px 20px;
+    width: 200px;
 }
 
 
