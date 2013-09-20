@@ -27,8 +27,9 @@ footer {
 }
 
 footer .column {
-    float: left;
-    width: 50%;
+    /*float: left;
+    width: 100%;*/
+    text-align: left;
 }
 
 footer .column.last {
@@ -104,11 +105,6 @@ h2 {
 h2 em {
     color: #3E4956;
     font-style: normal;
-}
-
-.wrap {
-    margin: 0 auto;
-    width: 990px;
 }
 
 .content {
