@@ -38,8 +38,29 @@
                     <p>Sorry, this page is under construction.</p>
                 </div>              
             </div> <!-- end post -->
-        </div> <!-- end posts -->           
-    </div> <!-- end wrap -->
+
+    <div class="row">
+      <div class="span6 offset3">
+        <%= form_for(@user) do |f| %>
+            <%= render 'shared/error_messages' %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+  
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+
+        <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+        <% end %>
+    </div>
+  </div>           
+    
 
     <footer>
         <div class="wrap">

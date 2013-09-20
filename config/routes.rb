@@ -1,11 +1,12 @@
 Tutoring::Application.routes.draw do
-  get "users/new"
+  resources :users
   root "static_pages#home"
   match '/rates',    to: 'static_pages#rates', via: 'get'
   match '/about',   to: 'static_pages#about', via: 'get'
   match '/faq', to: 'static_pages#faq', via: 'get'
   match '/testimonials', to: 'static_pages#testimonials', via: 'get'
   match '/signup', to: 'users#new', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
