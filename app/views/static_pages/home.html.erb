@@ -27,13 +27,18 @@
 
     <!-- BEGIN Content -->
     <div class="content ">
-            
     <div class="lead">
         <div class="wrap">
-          <!--  <header>
+          <header>
+            <% if signed_in? %>
+              <%= link_to "Users", '#' %></li>  
+              <%= link_to "Sign out", signout_path, method: "delete" %>        
+            <% else %>
+              <%= link_to "Sign in", signin_path %>
+            <% end %>
 
-            </header>
-          -->
+        </header>
+          
             <h1>Welcome to Sam Nebel Math Tutoring</h1>
             <h2><em>Learn Math the right way.</em> An effective, friendly, risk-free tutoring service.</h2>
             
