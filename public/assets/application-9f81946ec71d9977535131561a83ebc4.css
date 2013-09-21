@@ -1,0 +1,576 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 990px;
+}
+
+/* Clearfix */
+
+.cf:before, .cf:after,
+.wrap:before, .wrap:after,
+.content:before, .content:after,
+header:before, header:after,
+footer:before, footer:after,
+.button:before, .button:after,
+.opposing-float-control:before, .opposing-float-control:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after,
+.wrap:after,
+.content:after,
+header:after,
+footer:after,
+.button:after,
+.opposing-float-control:after {
+    clear: both;
+}
+
+/*copied*/
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 40px;
+        }
+
+        #left-navigation {
+            float: left;
+        }
+
+        #left-navigation p {
+            font-size: 14px;
+        }
+
+        #right-navigation {
+            float: right;
+        }
+
+        #right-navigation p {
+            font-size: 14px;
+        }
+
+        body {
+            background-color: #f4f3f3;
+            min-width: 650px;
+        }
+      
+        a:visited:hover {
+            color: #ff770d;
+        }
+
+        .text h2 {
+            color: #3E4956;
+            display: block;
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            text-align: left;
+            padding: 60px 0 0 0;
+        }
+
+        p {
+            color: #9099A3;
+            font-size: 16px;
+            font-weight: 350;
+            line-height: 1.75;
+            margin-bottom: 15px;
+        }
+
+        p:last-child {
+            display: inline;
+        }
+
+        .wrap {
+            margin: 0 auto;
+            width: 550px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding-bottom: 50px;
+            position: relative;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+            padding-bottom: 10;
+        }
+
+
+
+        .post .author {
+            border: 4px solid #fff;
+            border-radius: 120px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: absolute;
+            vertical-align: text-bottom;
+            left: 160px;
+            top: -10px;
+            width: 65px;
+            margin: 30px 0 10px 0;
+        }
+
+        .rome_img {
+            display: block;
+            border-radius: 0px;
+            width: 65px;
+
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #ddd;
+            width: 100%;
+            overflow: hidden;
+            margin: 50px auto 0px auto;
+            float: left; 
+        }
+
+        footer .column {
+            float: left;
+        }
+
+        footer .column.last {
+            float: right;
+        }
+
+        footer p {
+            color: #9099A3;
+            font-size: 14px;
+            font-weight: 200;
+        }
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #FF770D;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.15);
+  color: #3e4956;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 17px 20px;
+  width: 500px;
+
+}
+/* miscellaneous */
+/* sidebar */
+aside span {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1; }
+aside h1 {
+  font-size: 1.4em;
+  text-align: left;
+  letter-spacing: -1px; }
+
+.gravatar {
+  float: left;
+  margin-right: 10px; }
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.row {
+  font-size: 16px;
+  color: #9099A3;
+  font-weight: 350px; }
+
+.btn {
+  background: #ff770d;
+  margin: 17px 0 0 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500; }
+
+input {
+  height: auto !important; }
+
+#error_explanation {
+  color: #f00; }
+  #error_explanation ul {
+    list-style: none;
+    margin: 0 0 18px 0; }
+.button,
+button {
+  border: none; 
+}
+
+a,
+a:visited {
+  color: #333;
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+  color: #ff770d;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #ddd;
+    padding: 50px 0 50px 0px;
+}
+
+footer .column {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+footer .column.last {
+    text-align: right;
+}
+
+footer p {
+    color: #9099A3;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer a {
+    color: #3E4956;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+footer a.orange {
+    color: #FF770D;
+    font-weight: 600;
+    margin: 0;
+}
+
+::selection {
+    color: #ff770d;
+}
+
+body {
+  background-color: #f4f3f3;
+  overflow-x: hidden;
+}
+
+form,
+input {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
+a {
+    border: none;
+    outline: none;
+}
+
+svg {
+    border: none;
+    outline: none;
+}
+
+h1 {
+    color: #3E4956;
+    font-size: 46px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 0 0 0;
+}
+
+h2 {
+    color: #9099A3;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 em {
+    color: #3E4956;
+    font-style: normal;
+}
+
+.content {
+    padding: 0;
+}
+
+/* Lead */
+.lead {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.lead .button {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 20px;
+}
+
+.lead h2 {
+    line-height: 2.0;
+}
+
+#header {
+  background: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  /*border-bottom: 1px solid #ddd;*/
+  margin: 0 auto;
+  text-align: right;
+  padding: 80px 0 10px 0;
+}
+
+
+.call-to-action {
+    padding: 10px 0 50px 0;
+    text-align: center;
+}
+
+
+.call-to-action img {
+    border-radius: 600px;
+    display: inline;
+    margin: 0px 0px 20px 0px;
+    border: 2px solid #b0b8c2;
+    opacity: .9;
+}
+
+.signup-form input {
+    border: 1px solid #FF770D;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.15);
+    color: #3e4956;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 17px 20px;
+    width: 200px;
+}
+
+
+#mc-embedded-subscribe {
+    background: #FF770D;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: inline-block;
+    left: -4px;
+    padding: 20px;
+    position: relative;
+    vertical-align: top;
+}
+
+#mc-embedded-subscribe .icon {
+    background: #FF770D url('/assets/icon-sprite.png') no-repeat left 60%;
+    display: block;
+    height: 20px;
+    font-size: 18px;
+    line-height: 1;
+    text-indent: -9999px;
+    width: 31px;
+}
+
+/* Points */
+.points {
+    padding: 60px 0 0 0;
+
+}
+
+.point {
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.last .point {
+    margin-bottom: 0;
+}
+
+.point:nth-child(3n) {
+    margin-right: 0;
+}
+
+.point h3 {
+    color: #3E4956;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 5px;
+    padding-left: 45px;
+}
+
+.sat h3 {
+    background: url('https://cdn1.iconfinder.com/data/icons/munich/32x32/pencil.png') 
+      no-repeat left top;
+    background-position: left 5px;
+}
+.home h3 {
+    background: url('https://cdn1.iconfinder.com/data/icons/de-munich-icon-pack/32x32/home.png') 
+      no-repeat left top;
+    background-position: left 0px
+}
+.homework h3 {
+    background-position: left -105px;
+    background: url('https://cdn1.iconfinder.com/data/icons/de-munich-icon-pack/32x32/finished-work.png') 
+      no-repeat left top;
+}
+.email h3 {
+    background-position: left -155px;
+    background: url('https://cdn1.iconfinder.com/data/icons/de-munich-icon-pack/32x32/email.png') 
+      no-repeat left top;
+}
+.schedule h3 {
+    background-position: left -255px;
+    background: url('https://cdn1.iconfinder.com/data/icons/de-munich-icon-pack/32x32/calendar.png') 
+      no-repeat left top;
+}
+.call h3 {
+    background-position: left -205px;
+    background: url('https://cdn1.iconfinder.com/data/icons/munich/32x32/contact.png') 
+      no-repeat left top;
+}
+
+.point p {
+    color: #9099A3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 850px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #ddd;
+    padding: 50px 0 50px 0;
+}
+
+footer .column {
+    float: left;
+    width: 50%;
+}
+
+footer .column.last {
+    text-align: right;
+}
+
+footer p {
+    color: #9099A3;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer a {
+    color: #3E4956;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+footer a.orange {
+    color: #ff770d;
+    font-weight: 600;
+    margin: 0;
+}
+
+#header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0px;
+  padding: 40px;
+}
+
+#left-navigation {
+  float: left;
+  font-weight: 400;
+}
+
+#right-navigation {
+  float: right;
+  font-weight: 400;
+}
+
+.legal h1 {
+  color: #3E4956;
+  font-weight: 400;
+  padding: 40px;
+  text-align: center;
+}
+
+.legal h2 {
+  color: #3E4956;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.legal p,
+.legal li {
+  color: #7d8287;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+.legal section {
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.references p {
+  line-height: 1.75;
+}
+
+body {
+  background-color: #f4f3f3;
+  overflow-x: hidden;
+}
