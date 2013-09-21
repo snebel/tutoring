@@ -18,8 +18,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to Sam Nebel Math Tutoring!"
-      redirect_to root_url
+      redirect_back_or root_url
     else
       render 'new'
     end
@@ -33,6 +32,17 @@ class UsersController < ApplicationController
   end
 
   def signed_in_user
-      redirect_to signin_url, notice: "Please sign in." unless signed_in?
+      store_location
+      redirect_to signin_url, notice: "Please sign in to access this page."
+       unless signed_in?
+  end
+
+  def store_location
+    session[:return_to] = request.url if request.get?
+  end
+
+  def redirect_back_or(default)
+    redirect_to(session[:return_to] || default)
+    session.delete(:return_to)
   end
 end
