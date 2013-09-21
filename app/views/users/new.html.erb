@@ -36,25 +36,23 @@
                     <h2>Sign Up</h2>
                         
                     <p>Sorry, this page is under construction.</p>
+                    <p>Signing up as a student is obligation-free. It gives you access to Math-learning resources, allows you to book appointments online, and gives you access to the tutoring forum.
+                    </p> 
                 </div>              
             </div> <!-- end post -->
 
     <div class="row">
       <div class="span6 offset3">
         <%= form_for(@user) do |f| %>
-         <%= render 'shared/error_messages' %>
+            <%= render 'shared/error_messages' %>
 
-        <%= f.label :name %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, :placeholder => "Name" %>
   
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+        <%= f.text_field :email, :placeholder => "Email" %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+        <%= f.password_field :password, :placeholder => "Password" %>
 
-        <%= f.label :password_confirmation, "Confirmation" %>
-        <%= f.password_field :password_confirmation %>
+        <%= f.password_field :password_confirmation, :placeholder => "Confirm passord" %>
 
         <%= f.submit "Create my account", class: "btn" %>
         <% end %>
