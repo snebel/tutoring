@@ -46,11 +46,12 @@ footer a.orange {
 
 #left-navigation {
   float: left;
-  min-width: 300px;
+  font-weight: 400;
 }
 
 #right-navigation {
   float: right;
+  font-weight: 400;
 }
 
 .legal h1 {
