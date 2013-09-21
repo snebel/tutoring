@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <style>
+  .users {
+  	  list-style: none;
+  	  margin: 0;
+  	}
+
+  li {
+    overflow: auto;
+   	padding: 5px 0 0 25px;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+    border-bottom: 1px solid $grayLighter;
+   }
+
+  </style>
+</head>
+
+<body>
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.name, user %>
+    </li>
+  <% end %>
+</ul>
+
+</body>
+</html>
