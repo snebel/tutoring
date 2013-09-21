@@ -10,24 +10,50 @@
 </head>
 
 <body>
-<h1>Sign in</h1>
+<header>
+  <div class="wrap">
+    <div id="left-navigation">
+      <p> <a href="tel: +16466233224">(646) 623-3224</a> </p>
+    </div>
+
+    <div id="right-navigation">
+      <p><a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a></p>
+    </div>
+  </div>
+</header>
+
+<div class="post">
+  <p> </p>
+</div>
 
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(:session, url: sessions_path) do |f| %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, :placeholder => "Email" %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, :placeholder => "Password" %>
 
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-    <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+      Not a current student? <%= link_to "Sign up!", signup_path %>
+    <% end %>
+    
   </div>
 </div>
 
+<footer>
+  <div class="wrap">
+    <nav>
+      <div class="column">
+        <%= link_to "Home", root_path %>
+      </div>
+    </nav>
+      <div class="column last">
+        <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
+      </div>
+  </div>
+ </footer>
+    
 </body>
-<html>
+</html>

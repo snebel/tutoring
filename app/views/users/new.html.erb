@@ -34,9 +34,7 @@
                     
                 <div class="text">
                     <h2>Sign Up</h2>
-                        
-                    <p>Sorry, this page is under construction.</p>
-                    <p>Signing up as a student is obligation-free. It gives you access to Math-learning resources, allows you to book appointments online, and gives you access to the tutoring forum.
+                    <p>Signing up as a student is obligation-free. It will give you access to free Math-learning resources, allow you to book appointments online, and let you interact with the tutoring forum.
                     </p> 
                 </div>              
             </div> <!-- end post -->
@@ -45,16 +43,12 @@
       <div class="span6 offset3">
         <%= form_for(@user) do |f| %>
             <%= render 'shared/error_messages' %>
-
         <%= f.text_field :name, :placeholder => "Name" %>
-  
         <%= f.text_field :email, :placeholder => "Email" %>
-
         <%= f.password_field :password, :placeholder => "Password" %>
-
         <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
-
         <%= f.submit "Create my account", class: "btn" %>
+        Already have an account? <%= link_to "Sign in.", signin_path %>
         <% end %>
     </div>
   </div>           
@@ -65,9 +59,6 @@
             <nav>
             <div class="column">
                 <%= link_to "Home", root_path %>
-                <%= link_to "Rates", rates_path %>
-                <%= link_to "Testimonials", testimonials_path %>
-                <%= link_to "FAQ", faq_path %>
             </div>
             </nav>
             <div class="column last">

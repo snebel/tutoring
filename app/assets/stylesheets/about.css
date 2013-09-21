@@ -169,6 +169,7 @@ input, textarea, select, .uneditable-input {
   font-weight: 300;
   padding: 15px 20px;
   width: 350px;
+  margin-bottom: 5px;
 }
 
 form {
