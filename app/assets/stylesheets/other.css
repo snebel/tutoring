@@ -75,19 +75,6 @@ footer a.orange {
   line-height: 1.75;
 }
 
-.legal p,
-.legal ol {
-  margin-bottom: 30px;
-}
-
-.legal ol {
-  margin-left: 45px;
-}
-
-.legal p:last-child,
-.legal ol:last-child {
-  margin-bottom: 0;
-}
 
 .legal section {
   background-color: #fff;
@@ -95,6 +82,10 @@ footer a.orange {
   border-radius: 5px;
   margin-bottom: 40px;
   padding: 40px;
+}
+
+.references p {
+  line-height: 1.75;
 }
 
 body {
