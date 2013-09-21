@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :signed_in_user, only: [:resources]
+
   def new
   end
 
@@ -6,8 +8,7 @@ class SessionsController < ApplicationController
   	user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       sign_in user
-      flash[:success] = "Sign-in successful!"
-      redirect_to root_url
+      redirect_back_or user
     else
       flash.now[:error] = 'Invalid email/password combination' # Not quite right!
       render 'new'
@@ -18,4 +19,25 @@ class SessionsController < ApplicationController
   	sign_out
   	redirect_to root_url
   end
+
+  def signed_in_user
+    unless signed_in?
+      store_location
+      redirect_to signin_url, notice: "Please sign in to access this page."
+    end
+  end
+
+  def resources
+    #@user = User.find(params[:id])
+  end
+
+  def redirect_back_or(default)
+    redirect_to(session[:return_to] || default)
+    session.delete(:return_to)
+  end
+
+  def store_location
+    session[:return_to] = request.url if request.get?
+  end
+
 end

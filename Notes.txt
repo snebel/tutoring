@@ -1,0 +1,4 @@
+To Make a new page:
+1. create a view: newpage.html.erb
+2. add to the appropriate controller: def newpage end
+3. add a route
