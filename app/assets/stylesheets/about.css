@@ -76,7 +76,7 @@ footer:after,
             color: #ff770d;
         }
 
-        h2 {
+        .text h2 {
             color: #3E4956;
             display: block;
             font-size: 28px;
@@ -146,7 +146,7 @@ footer:after,
         }
 
         footer .column {
-            text-align: right;
+            float: left;
         }
 
         footer .column.last {

@@ -65,7 +65,7 @@ footer a.orange {
   color: #3E4956;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 2;
 }
 
 .legal p,
@@ -77,7 +77,7 @@ footer a.orange {
 
 .legal p,
 .legal ol {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .legal ol {
