@@ -1,6 +1,7 @@
 Tutoring::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :charges
   root "static_pages#home"
   match '/rates',    to: 'static_pages#rates', via: 'get'
   match '/about',   to: 'static_pages#about', via: 'get'
@@ -10,7 +11,7 @@ Tutoring::Application.routes.draw do
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/resources', to: 'sessions#resources', via: 'get'
-
+  match '/payments', to: 'static_pages#payments', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
