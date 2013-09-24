@@ -3,6 +3,9 @@ class ChargesController < ApplicationController
 def new
 end
 
+def payments
+end
+
 
 def create
   # Amount in cents
