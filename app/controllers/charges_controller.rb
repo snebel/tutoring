@@ -3,12 +3,6 @@ class ChargesController < ApplicationController
 def new
 end
 
-# Set your secret key: remember to change this to your live secret key in production
-# See your keys here https://manage.stripe.com/account
-Stripe.api_key = "sk_test_nfRXkPWKQkNJhrBofH0qnxrO"
-
-# Get the credit card details submitted by the form
-token = params[:stripeToken]
 
 def create
   # Amount in cents
