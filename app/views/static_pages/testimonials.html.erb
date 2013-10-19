@@ -2,104 +2,49 @@
 <html>
   <head>
     <title>Testimonials</title>
-    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-    <link rel="logo" type="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-
-    <!-- Styles -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" type="text/css" rel="stylesheet">
-        
+    <%= render 'shared/links' %>  
     <%= stylesheet_link_tag "other" %>
-
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-22937212-1']);
-            _gaq.push(['_setDomainName', 'samnebel.com']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-    </script>
+    <%= render 'shared/analytics' %>
   </head>
-  
-  
-  <!-- Body -->
+
   <body class="legal">
-    <!-- BEGIN Header --> 
-    <header id="header">
-      <div class="wrap">
-        <div id="left-navigation">
-          <p><!--<img src="https://cdn1.iconfinder.com/data/icons/de-munich-icon-pack/16x16/contact.png">-->
-          <a href="tel: +16466233224">(646) 623-3224</a></p>
-        </div>
-        <div id="right-navigation">
-          <p><!--<img src="https://cdn1.iconfinder.com/data/icons/munich/16x16/email.png">-->
-          <a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a></p>
-        </div>
-      </div>
-    </header>
-        <!-- END Header -->
-
-    <!-- BEGIN Content -->
-    <div class="content "> 
-      <div class="wrap">
+    <%= render 'shared/contact' %>
+ 
+    <div class="wrap">
       <h1>Testimonials</h1>
-        <section>
-          <p>For further reviews, see Sam's <a href="http://www.wyzant.com/Tutors/SamN" target="_blank"><b>Wyzant</b></a> and <a href="http://www.yelp.com/biz/sam-nebel-math-tutoring-new-york" target="_blank"><b>Yelp</b></a> pages.</P>
+      <section>
+        <p>For further reviews, see Sam's <a href="http://www.wyzant.com/Tutors/SamN" target="_blank"><b>Wyzant</b></a> and <a href="http://www.yelp.com/biz/sam-nebel-math-tutoring-new-york" target="_blank"><b>Yelp</b></a> pages.</P>
 
-          <h2>Rose Echelon (SAT Math & Algebra II)</h2>
-          <p>"<i>Sam is one cool, very patient young gentleman who knows his stuff.  He is the essence of what a great tutor should be: caring, polite, extremely competent, and punctual.  Sam was there for my son when he really needed some excellent help and I'm very grateful to him. I know Sam is going to make a difference in my son's final score in math.  Much thanks to you, Sam!</i>"
-          </p>
+        <h2>Rose Echelon (SAT Math & Algebra II)</h2>
+        <p>"<i>Sam is one cool, very patient young gentleman who knows his stuff.  He is the essence of what a great tutor should be: caring, polite, extremely competent, and punctual.  Sam was there for my son when he really needed some excellent help and I'm very grateful to him. I know Sam is going to make a difference in my son's final score in math.  Much thanks to you, Sam!</i>" </p>
 
-          <h2>Danielle L. (SAT Math)</h2>
-          <p>"<i>A month or two prior to my June SATs I began meeting with Sam for extra help on the math section. Sam helped me prepare for my SATs in an effective and simple way, practice. Every time we met I'd do a different practice test and by the end of our sessions I understood every question I had missed! His help really showed; on my March SATs I received a 520 on the math section and when we'd grade my practice tests I'd get somewhere in the 650 range! Sam was very helpful and easy to talk to throughout this entire process and I would recommend his services to anyone I know.</i>"</p>
+        <h2>Danielle L. (SAT Math)</h2>
+        <p>"<i>A month or two prior to my June SATs I began meeting with Sam for extra help on the math section. Sam helped me prepare for my SATs in an effective and simple way, practice. Every time we met I'd do a different practice test and by the end of our sessions I understood every question I had missed! His help really showed; on my March SATs I received a 520 on the math section and when we'd grade my practice tests I'd get somewhere in the 650 range! Sam was very helpful and easy to talk to throughout this entire process and I would recommend his services to anyone I know.</i>"</p>
 
-          <h2>Vincent Cignarella (SAT Math & Algebra II)</h2>
-          <p>"<i>Fantastic young man! Sam was great. My son has Aspbergers and does not make social connections easily. He responded immediately to Sam and has improved his grades since. I highly recommend him.</i>".</p>
+        <h2>Vincent Cignarella (SAT Math & Algebra II)</h2>
+        <p>"<i>Fantastic young man! Sam was great. My son has Aspbergers and does not make social connections easily. He responded immediately to Sam and has improved his grades since. I highly recommend him.</i>".</p>
 
-          <h2>Jing Zhang (Algebra II/Trigonometry Regents)</h2>
-          <p>"<i>Sam is a wonderful tutor. He is good at Math, good at explaining things and good at keeping my boy's attention. My 15 years old son told me that time passed fast when he was working with Sam. Sam also worked with me very well. He followed my instructions, came well prepared, and updated me the results of the session.</i>"
-          </p>
+        <h2>Jing Zhang (Algebra II/Trigonometry Regents)</h2>
+        <p>"<i>Sam is a wonderful tutor. He is good at Math, good at explaining things and good at keeping my boy's attention. My 15 years old son told me that time passed fast when he was working with Sam. Sam also worked with me very well. He followed my instructions, came well prepared, and updated me the results of the session.</i>" </p>
 
-          <h2>Anna Martino (Geometry Regents)</h2>
-          <p>"<i>Being a Russian immigrant who has high aspirations for my child’s educational success, I would like to say that getting Sam’s help for tutoring my son in Geometry Regents was the best thing I did.  It gave him help and structure when he did not want to admit he needed it most.  Sam turned out to be a very kind and patient tutor who without intimidating my son’s ego would nevertheless command respect for assignments and encourage my son to keep practicing before the test.  Sam was able to help sort out the materials last minute before the Regents exam and help my son prepare for it step by step.</i>"
-          </p>
+        <h2>Anna Martino (Geometry Regents)</h2>
+        <p>"<i>Being a Russian immigrant who has high aspirations for my child’s educational success, I would like to say that getting Sam’s help for tutoring my son in Geometry Regents was the best thing I did.  It gave him help and structure when he did not want to admit he needed it most.  Sam turned out to be a very kind and patient tutor who without intimidating my son’s ego would nevertheless command respect for assignments and encourage my son to keep practicing before the test.  Sam was able to help sort out the materials last minute before the Regents exam and help my son prepare for it step by step.</i>" </p>
 
-          <h2>Joyann Flor (Algebra II) </h2>
-          <p>"<i>Sam is extremely bright, articulate and an exceptionally proficient math tutor.   He helped me meet all the goals that I had wished to achieve in my course.  He is an excellent communicator and always on time.  He explained everything to me thoroughly and helped me to achieve a grade A in Algebra. Should you choose Sam to be your tutor, you will never regret it.</i>"</p>
+        <h2>Joyann Flor (Algebra II) </h2>
+        <p>"<i>Sam is extremely bright, articulate and an exceptionally proficient math tutor.   He helped me meet all the goals that I had wished to achieve in my course.  He is an excellent communicator and always on time.  He explained everything to me thoroughly and helped me to achieve a grade A in Algebra. Should you choose Sam to be your tutor, you will never regret it.</i>" </p>
 
-          <h2>Bridgitte Noble (Statistics)</h2>
-          <p>"<i>Meeting Sam was the best thing that happened to me when I was in need of a tutor for Statistics this summer.  Sam made Statistics seem easy. He's a sedulous person who has a passion for Math and settles for nothing but the best.  My grade is a 97% going into the final, and I would recommend Sam to anyone.  Don't be intimidated by his age or youthfulness. Thanks to Sam, I've been able to assist others who need help in Stats.  Having knowledge and not being able to share it is no knowledge at all.</i>"</p>
+        <h2>Bridgitte Noble (Statistics)</h2>
+        <p>"<i>Meeting Sam was the best thing that happened to me when I was in need of a tutor for Statistics this summer.  Sam made Statistics seem easy. He's a sedulous person who has a passion for Math and settles for nothing but the best.  My grade is a 97% going into the final, and I would recommend Sam to anyone.  Don't be intimidated by his age or youthfulness. Thanks to Sam, I've been able to assist others who need help in Stats.  Having knowledge and not being able to share it is no knowledge at all.</i>"</p>
 
-          <h2>Muhammad Nasseem (Calculus)</h2>
-          <p>"<i>Sam was very valuable in helping me prepare for my first Calculus test. He was very kind and polite. His method of helping me learn was amazingly clear. He helped me through each step of the way to getting an A on my first exam. He was extremely patient with me as well. I would highly recommend him to anyone who is struggling with Calculus.  Because of Sam I know I will do very well on the rest of my tests in this course.</i>"</p>
+        <h2>Muhammad Nasseem (Calculus)</h2>
+        <p>"<i>Sam was very valuable in helping me prepare for my first Calculus test. He was very kind and polite. His method of helping me learn was amazingly clear. He helped me through each step of the way to getting an A on my first exam. He was extremely patient with me as well. I would highly recommend him to anyone who is struggling with Calculus.  Because of Sam I know I will do very well on the rest of my tests in this course.</i>" </p>
 
-          <h2>Amber Amendola (Calculus)</h2>
-          <p>"<i>My understanding of calculus increased dramatically while working with Sam and I began to benefit from my tutoring sessions immediately.  Sam's patience and clear explanations made a huge difference.  His dedication to helping me master the concepts along with the time he invested in and out of our sessions demonstrated his sincere commitment to helping me succeed. With Sam's help, I finished the course with an A and a newfound confidence in math.</i>"</p>
-          
-        </section>
-      </div>
+        <h2>Amber Amendola (Calculus)</h2>
+        <p>"<i>My understanding of calculus increased dramatically while working with Sam and I began to benefit from my tutoring sessions immediately.  Sam's patience and clear explanations made a huge difference.  His dedication to helping me master the concepts along with the time he invested in and out of our sessions demonstrated his sincere commitment to helping me succeed. With Sam's help, I finished the course with an A and a newfound confidence in math.</i>"</p>
+      </section>
     </div>
-        <!-- END Content -->
 
-        <!-- BEGIN Footer -->
-    <footer>
-        <div class="wrap">
-            <nav>
-            <div class="column">
-                <%= link_to "Home", root_path %>
-                <%= link_to "About Sam", about_path %>
-                <%= link_to "Rates", rates_path %>
-                <%= link_to "Testimonials", testimonials_path %>
-                <%= link_to "FAQ", faq_path %>
-            </div>
-            </nav>
-            <div class="column last">
-                <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
-            </div>
-        </div>
-    </footer>
+    <%= render 'shared/footer' %>
   </body>
+
 </html>

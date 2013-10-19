@@ -1,46 +1,23 @@
-
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sam Nebel Math Tutoring</title>
+  <head>
+    <title>Sam Nebel Math Tutoring</title>
+    <%= render 'shared/meta' %>
+    <%= render 'shared/links' %>
+    <%= stylesheet_link_tag "home" %>
+    <%= render 'shared/analytics' %>        
+  </head>
 
-        <!-- Meta -->
-        <meta name="fb_admins_meta_tag" content=""/>
-        <meta name="keywords" content="Math tutor, Regents, SAT Math, SAT tutor, test prep, math tutoring, sat tutoring, sat math tutoring, math help, sam nebel, precalculus tutor, trigonometry tutor, algebra tutor, nyc"/>
-        <meta name="description" content="NYC based Math Tutor specializing in SAT Prep and NYS Regents exams."/>
-        <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-        <link rel="logo" type="image/svg" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-        <meta property="og:title" content="Sam Nebel Math Tutoring"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="http://www.samnebel.com/"/>
-        <meta property="og:site_name" content="Sam Nebel Math Tutoring"/>
-        <meta property="og:description" content="NYC based Math Tutor specializing in SAT Prep and NYS Regents exams."/>
-
-        <!-- Styles -->
-        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" type="text/css" rel="stylesheet">
-        <%= stylesheet_link_tag    "home" %>
-
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-22937212-1']);
-            _gaq.push(['_setDomainName', 'samnebel.com']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-        
-    </head>
-
-
-    <body class="public homepage">
+  <body>    
     <header id="header">
       <div class="wrap">
-        <div id="left-navigation"></div>
+        <div id="left-navigation">
+          <%= link_to "Home", root_path %>
+          <%= link_to "About Sam", about_path %>
+          <%= link_to "Rates", rates_path %>
+          <%= link_to "Testimonials", testimonials_path %>
+          <%= link_to "FAQ", faq_path %>
+        </div>
 
         <div id="right-navigation">
           <% if signed_in? %>  
@@ -53,117 +30,43 @@
     </header>
 
     <!-- BEGIN Content -->
-    <div class="content ">
     <div class="lead">
-        <div class="wrap">
-         <!-- <header>
-            <% if signed_in? %>
-              <%= link_to "Users", '#' %></li>  
-              <%= link_to "Sign out", signout_path, method: "delete" %>        
-            <% else %>
-              <%= link_to "Sign in", signin_path %>
-            <% end %>
-
-        </header> -->
-          
-            <h1>Welcome to Sam Nebel Math Tutoring</h1>
-            <h2><em>Learn Math the right way.</em> An effective, friendly, risk-free tutoring service.</h2>
+      <div class="wrap">
+        <h1>Welcome to Sam Nebel Math Tutoring</h1>
+        <h2><em>Learn Math the right way.</em> An effective, friendly, risk-free tutoring service.</h2>
             
-            <div class="call-to-action">
-                <!-- BEGIN Mailchimp form -->
+        <div class="call-to-action">  
+          <div id="mc_embed_signup" class="signup-form">
+            <%= image_tag "samrome.png" %>
+
+            <form action="MAILTO:sam@samnebel.com?subject=Math%20Question" method="post" enctype="text/plain" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                                
+              <input type="text" value="" name="Q" class="email" id="mce-EMAIL" placeholder="Ask me a question!" autocorrect="off" spellcheck="false" required>
                 
-                <div id="mc_embed_signup" class="signup-form">
-                    <%= image_tag "samrome.png" %>
-
-                    <form action="MAILTO:sam@samnebel.com?subject=Math%20Question" method="post" enctype="text/plain" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        
-                        
-                        <input type="text" value="" name="Q" class="email" id="mce-EMAIL" placeholder="Ask me a question!" autocorrect="off" spellcheck="false" required>
-                        <button type="submit" id="mc-embedded-subscribe">
-                            <span class="icon"></span>
-                        </button>
-
-                    </form>
-                </div>
-            </div>
+              <button type="submit" id="mc-embedded-subscribe"><span class="icon"></span> </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="points wrap cf">
-        <!-- Row 1 -->
-        <div class="row first">
-        <div class="point home">
-            <h3>In-home tutoring</h3>
-                <p>
-                    Learn in the comfort of your home. Sam will come to you anywhere in Manhattan, western Queens, or downtown Brooklyn.
-                </p>
-            </div>
+    <%= render 'points' %> 
 
-            <div class="point sat">
-                <h3>SAT & NYS Regents</h3>
-                <p>
-                    Sam has extensive experience with SAT Math and the Math Regents exams. Affordable lesson blocks available.
-                </p>
-            </div>
-
-            <div class="point homework">
-                <h3>Homework help</h3>
-                <p>
-                    Improve your understanding and do better in school. Efficient homework help offered in Geometry, Algebra, and Precalculus.
-                </p>
-            </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="row last">
-            <div class="point email">
-                <h3>Email support</h3>
-                <p>
-                    Free math help outside of sessions, even for non-students. Shoot Sam a note at <a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a>.
-                </p>
-            </div>
-
-            <div class="point schedule">
-                <h3>Flexible scheduling</h3>
-                <p>
-                    Mornings, nights, and weekends.
-                </p>
-            </div>
-
-            <div class="point call">
-                <h3>Call today!</h3>
-                <p>
-                    Call or text <a href="tel: +16466233224">(646) 623-3224</a> any time.
-                </p>
-            </div>
-        </div>
-    </div>
-
-        <!-- END Content -->
-
-        <!-- BEGIN Footer -->
-        
     <footer>
-        <div class="wrap">
-            <nav>
-            <div class="column">
-                <%= link_to "Home", root_path %>
-                <%= link_to "About Sam", about_path %>
-                <%= link_to "Rates", rates_path %>
-                <%= link_to "Testimonials", testimonials_path %>
-                <%= link_to "FAQ", faq_path %>
-                <%= link_to "Sign Up", signup_path %>
-                <%= link_to "Resources", resources_path %>
-                <!--, class: "btn btn-large btn-primary" -->
-                <%= link_to "Payments", payments_path %>
-                
-            </div>
-            </nav>
-            <div class="column last">
-               <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
-            </div>
+      <div class="wrap">
+        <nav>
+          <div class="column">
+            <%= link_to "Sign Up", signup_path %>
+            <%= link_to "Resources", resources_path %>
+            <%= link_to "Payments", payments_path %>         
+          </div> 
+        </nav>
+
+        <div class="column last">
+          <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
         </div>
+      </div>
     </footer>
 
-    </body>
+  </body>
 </html>

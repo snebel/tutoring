@@ -1,76 +1,47 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Meta -->
-
+  <head>
+    <%= render 'shared/meta' %>
     <title>About Sam</title>
-
-    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-
+    <%= render 'shared/links' %>
     <%= stylesheet_link_tag "about" %>
+    <%= render 'shared/analytics' %>
+  </head>
 
-    <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-22937212-1']);
-            _gaq.push(['_setDomainName', 'samnebel.com']);
-            _gaq.push(['_trackPageview']);
+  <body> 
+    <%= render 'shared/contact' %>
 
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-    </script>
-</head>
-
-<body>
-    <!-- BEGIN Header --> 
-    <header id="header">
-    	<div class="wrap">
-        	<div id="left-navigation">
-          		<p> <a href="tel: +16466233224">(646) 623-3224</a> </p>
-        	</div>
-
-        	<div id="right-navigation">
-        		<p><a href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a></p>
-        	</div>
-      	</div>
-    </header>
-
-    <div class="wrap">
-        <div class="posts">                
-                
-            <div class="post">
-                <div class="author">
-                   <%= image_tag "sambali.jpg", :class => "rome_img" %>
-                </div>
-                    
-                <div class="text">
-                    <h2>About Sam</h2>
-                        
-                    <p class="par">Sam has three years experience as a professional Math tutor in NYC.   He specializes in standardized test prep, and has a proven system for helping students reach their goal scores on the SAT.</p>
-                    <p>A New York native, Sam is a graduate of Friends Seminary ('09) and Wesleyan University ('13), where he majored in Mathematics and Psychology, and minored in Computer Science. Sam's interests include travel, food, basketball, and tech. Please take a look at his <%= link_to "résumé", asset_path("resume.pdf"), :target => "_blank" %>.</p>
-                </div>              
-            </div> <!-- end post -->
-        </div> <!-- end posts -->           
+    <div class="wrap">                  
+      <div class="post">
+        <div class="author">
+          <%= image_tag "sambali.jpg", :class => "rome_img" %>
+        </div>    
+        <div class="text">
+          <h2>About Sam</h2>
+          <p>Sam has three years experience as a professional Math tutor in NYC. He specializes in standardized test prep, and has a proven system for helping students reach their goal scores on the SAT.</p>
+          <p>A New York native, Sam is a graduate of Friends Seminary ('09) and Wesleyan University ('13), where he majored in Mathematics and Psychology, and minored in Computer Science. Sam's interests include travel, food, basketball, and tech. Please take a look at his <%= link_to('résumé', asset_path('resume.pdf'), :target => '_blank') %>. </p>
+        </div>              
+      </div> <!-- end post -->           
     </div> <!-- end wrap -->
 
     <footer class="aboutfooter">
-        <div class="wrap">
-            <nav>
-            <div class="column">
-                <%= link_to "Home", root_path %>
-                <%= link_to "Rates", rates_path %>
-                <%= link_to "Testimonials", testimonials_path %>
-                <%= link_to "FAQ", faq_path %>
-            </div>
-            </nav>
-            <div class="column last">
-                <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
-            </div>
+      <div class="wrap">
+        <nav>
+          <div class="column">
+            <%= link_to "Home", root_path %>
+            <%= link_to "Rates", rates_path %>
+            <%= link_to "Testimonials", testimonials_path %>
+            <%= link_to "FAQ", faq_path %>
+          </div>
+        </nav>
+
+        <div class="column last">
+          <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font> </p>
         </div>
+      </div>
     </footer>
-    
-</body>
+
+  </body>
+
 </html>

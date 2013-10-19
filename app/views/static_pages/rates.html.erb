@@ -2,96 +2,36 @@
 <html>
   <head>
     <title>Rates & Info</title>
-    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-    <link rel="logo" type="image/svg" href="https://cdn1.iconfinder.com/data/icons/munich/16x16/lightbulb.png">
-
-    <!-- Styles -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" type="text/css" rel="stylesheet">
-        
+    <%= render 'shared/links' %>      
     <%= stylesheet_link_tag "other" %>
-
-    <style>
-      .content p {
-        text-align: center;
-      }
-    </style>
-
-    <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-22937212-1']);
-            _gaq.push(['_setDomainName', 'samnebel.com']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-    </script>
+    <%= render 'shared/analytics' %>
   </head>
-  
-  <!-- Body -->
+
   <body class="legal">
-    <!-- BEGIN Header --> 
-    <header id="header">
-      <div class="wrap">
-        <div id="left-navigation">
-          <p><a class="contact" href="tel: +16466233224">(646) 623-3224</a></p>
-        </div>
-
-        <div id="right-navigation">
-          <p><a class="contact" href="mailto:sam@samnebel.com" target="_blank">sam@samnebel.com</a></p>
-        </div>
-      </div>
-    </header>
-
-    <!-- BEGIN Content -->
-    <div class="content "> 
-      <div class="wrap">
+    <%= render 'shared/contact' %>
+ 
+    <div class="wrap">
       <h1>Rates & Information</h1>
-        <section>
-          <h2>Location</h2>
-          <p>Tutoring occurs at the student's home or other location in Manhattan, western Queens, or Downtown Brooklyn. Rates include travel costs and email support between sessions.
-          </p>
+      <section>
+        <h2>Location</h2>
+        <p>Tutoring occurs at the student's home or other location in Manhattan, western Queens, or Downtown Brooklyn. Rates include travel costs and email support between sessions.</p>
 
-          <h2>SAT Prep – $100*/90mins – $120*/2hours</h2>
-          <p>60 minutes is too short for students to absorb new SAT skills. The recommended session length is 90 minutes, though 2 hour sessions are available. Sessions generally involve analyzing a practice test completed for homework and working through a more narrowly focused set of problems. SAT prep is individualized for each student. See the <%= link_to "FAQ", faq_path %> page for more info on Sam's method for tutoring the SAT.
-          </p>
+        <h2>SAT Prep – $100* / 90mins – $120* / 2 hours</h2>
+        <p>60 minutes is too short for students to absorb new SAT skills. The recommended session length is 90 minutes, though 2 hour sessions are available. Sessions generally involve analyzing a practice test completed for homework and working through a more narrowly focused set of problems. SAT prep is individualized for each student. See the <%= link_to "FAQ", faq_path %> page for more info on Sam's method for tutoring the SAT.</p>
 
-          <h2>SAT Crash Course – $900*</h2>
-          <p>Five weeks, ten 90 minute sessions, ten practice tests, priority scheduling. Individualized study plan and test-taking strategy to help each student reach his or her goal score.
-          </p>
+        <h2>SAT Crash Course – $900*</h2>
+        <p>Five weeks, ten 90 minute sessions, ten practice tests, priority scheduling. Individualized study plan and test-taking strategy to help each student reach his or her goal score.</p>
 
-          <h2>Regents Prep – $60 / hour*</h2>
-          <p>Thorough preparation for the Geometry, Integrated Algebra, or Algebra 2/Trigonometry exam. 
-          </p>
+        <h2>Regents Prep – $60* / hour</h2>
+        <p>Thorough preparation for the Geometry, Integrated Algebra, or Algebra 2/Trigonometry exam. </p>
 
-          <h2>Geometry, Algebra, Precalculus help – $50/per hour*</h2>
-          <p>Sam offers homework help and test prep in these three subjects only. 
-          </p>
-          <p><b>*</b>The above rates are Sam's standard fees, but he is always flexible depending on financial situations.
-          </p>
-        </section>
-      </div>
+        <h2>Geometry, Algebra, Precalculus help – $50* /  hour*</h2>
+        <p>Sam offers homework help and test prep in these three subjects only.</p>
+
+        <p><b>*</b>The above rates are Sam's standard fees, but he is always flexible depending on financial situations.</p>
+      </section>
     </div>
-        <!-- END Content -->
 
-        <!-- BEGIN Footer -->
-    <footer>
-        <div class="wrap">
-          <nav>
-            <div class="column">
-                <%= link_to "Home", root_path %>
-                <%= link_to "About Sam", about_path %>
-                <%= link_to "Rates", rates_path %>
-                <%= link_to "Testimonials", testimonials_path %>
-                <%= link_to "FAQ", faq_path %>  
-            </div>
-          </nav>
-            <div class="column last">
-                <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
-            </div>
-        </div>
-    </footer>
+    <%= render 'shared/footer' %>
   </body>
 </html>
