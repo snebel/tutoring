@@ -12,6 +12,7 @@ Tutoring::Application.routes.draw do
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/resources', to: 'sessions#resources', via: 'get'
   match '/payments', to: 'charges#new', via: 'get'
+  match '/payments', to: 'charges#create', via: 'post'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
