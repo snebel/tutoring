@@ -15,7 +15,7 @@ class StaticPagesController < ApplicationController
   def testimonials
   end
 
-  def payments
+  def schedule
   end
 
 end

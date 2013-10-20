@@ -1,6 +1,8 @@
 class ChargesController < ApplicationController
 
   def new
+    #@charge = Charge.new must create a database of 
+    #charges with amount attribute.
   end
 
   def create
@@ -14,7 +16,7 @@ class ChargesController < ApplicationController
       :card  => params[:stripeToken]
     )
 
-    #begin
+    begin
       charge = Stripe::Charge.create(
         :customer    => customer.id,
         :amount      => @amount,
@@ -22,11 +24,14 @@ class ChargesController < ApplicationController
         #:card => token,
         :description => 'Math tutee'
       )
+      unless charge["failure_message"]
+        flash.now[:error] = 'hello'
+        redirect_to root_url
 
+      end
     rescue Stripe::CardError => e
       flash[:error] = e.message
       redirect_to charges_path
     end
-
-  #end
+  end
 end

@@ -7,6 +7,7 @@ gem 'bcrypt-ruby', '3.0.1'
 
 group :development do
   gem 'sqlite3', '1.3.8'
+  gem 'pry'
 end
 
 gem 'sass-rails', '4.0.0'

@@ -11,6 +11,7 @@ Tutoring::Application.routes.draw do
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/resources', to: 'sessions#resources', via: 'get'
+  match '/schedule', to: 'static_pages#schedule', via: 'get'
   #match '/payments', to: 'charges#new', via: 'get'
   #match '/payments', to: 'charges#create', via: 'post'
   #match '/charges/new', to: 'charges#create', via: 'post'
