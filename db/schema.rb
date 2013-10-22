@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130921222920) do
+ActiveRecord::Schema.define(version: 20131021033110) do
+
+  create_table "charges", force: true do |t|
+    t.integer "amount"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"

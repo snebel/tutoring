@@ -9,39 +9,40 @@
     <%= stylesheet_link_tag "about" %>
 
     <%= render 'shared/analytics' %>
+
+    <style>
+      form {
+        display: inline-block;
+      }
+      select {
+        max-width: 60%;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
 
   <body> 
     <%= render 'shared/contact' %>
 
     <div class="wrap">
-      <div class="posts">                
-        <div class="post">
-          <div class="text">
-            <h2>Make a Payment</h2>
-            <p>Sorry, this page is in test-mode and under construction.</p> 
-          </div>              
-        </div> <!-- end post -->
+      <div class="text">
+        <h2>Make a Payment</h2>
+        <p>All payments are subject to a 3% transaction fee.</p>
+          
+        <%= form_for @charge do |f| %>
+          <%= select(:charge, :amount, [['$50.00', 5000], ['$60.00', 6000], ['$75.00', 7500], ['$90.00', 9000], ['$100.00', 10000], ['$120.00', 12000]]) %> <br/>
 
-        <!--  -->
-      <%= form_tag charges_path do %>
-      <article>
-        <label class="amount">
-        <span>Amount: $5.00</span>
-
-        </label>
-      </article>
-
-      <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
-        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-        data-description="A month's subscription"
-        data-amount="500"></script>
-    <% end %>
-
-    </div>
-  </div>           
+          <script 
+            src="https://checkout.stripe.com/v2/checkout.js"
+            class = "stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-description="Tutoring payment"
+            data-amount="">
+          </script>
+        <% end %>
+      </div>
+    </div>           
     
-  <%= render 'shared/footer' %>  
-
+    <%= render 'shared/footer' %>  
   </body>
 </html>
