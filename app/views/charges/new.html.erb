@@ -18,6 +18,9 @@
         max-width: 60%;
         margin-bottom: 10px;
       }
+      img {
+        margin-top: 5px;
+      }
     </style>
   </head>
 
@@ -28,7 +31,7 @@
       <div class="text">
         <h2>Make a Payment</h2>
         <p>All payments are subject to a 3% transaction fee.</p>
-          
+
         <%= form_for @charge do |f| %>
           <%= select(:charge, :amount, [['$50.00', 5000], ['$60.00', 6000], ['$75.00', 7500], ['$90.00', 9000], ['$100.00', 10000], ['$120.00', 12000]]) %> <br/>
 
@@ -36,13 +39,28 @@
             src="https://checkout.stripe.com/v2/checkout.js"
             class = "stripe-button"
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-description="Tutoring payment"
-            data-amount="">
+            data-name="Math Tutoring"
+            data-description="samnebel.com"
+            data-amount=""
+            data-currency="usd"
+            data-image="/128x128.png">
           </script>
         <% end %>
       </div>
+      <%= link_to image_tag("dark_outline/outline.png"), "http://stripe.com", target: "_blank" %>
     </div>           
     
-    <%= render 'shared/footer' %>  
+    <footer>
+      <div class="wrap">
+        <nav>
+        <div class="column">
+          <%= link_to "Home", root_path %>
+        </div>
+        </nav>
+        <div class="column last">
+          <p>© Sam Nebel Math Tutoring 2011 &#x2022 <font color="#ff770d"><b>NYC</b></font></p>
+        </div>
+        </div>
+    </footer> 
   </body>
 </html>
