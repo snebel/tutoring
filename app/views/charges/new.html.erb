@@ -19,7 +19,20 @@
         margin-bottom: 10px;
       }
       img {
-        margin-top: 5px;
+        margin-top: 2px;
+        max-width: 90px;
+      }
+      p {
+        line-height: 20px;
+      }
+      .text h2 {
+        padding: 30px 0 0 0;
+      }
+      footer {
+        margin-top: 20px;
+      }
+      footer .column {
+        margin-top: 30px;
       }
     </style>
   </head>
@@ -42,13 +55,18 @@
             data-name="Math Tutoring"
             data-description="samnebel.com"
             data-amount=""
-            data-currency="usd"
-            data-image="/128x128.png">
+            data-currency="usd">
           </script>
         <% end %>
       </div>
       <%= link_to image_tag("dark_outline/outline.png"), "http://stripe.com", target: "_blank" %>
-    </div>           
+
+      <p></br></p>
+      <p>Alternatively, Sam accepts payment by <a href="http://bitcoin.org/en/" target="_blank">Bitcoin</a>.</p>
+      <a class="coinbase-button" data-code="01a4c872c10614f9f45fefac8f8f0167" data-button-style="buy_now_small" href="https://coinbase.com/checkouts/01a4c872c10614f9f45fefac8f8f0167">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script> 
+
+    </div>
+
     
     <footer>
       <div class="wrap">
